@@ -1,0 +1,588 @@
+@font-face {
+    font-family: gilroy;
+    src: url(/Radomir\ Tinkov\ -\ Gilroy-Light.otf);
+
+}
+
+@font-face {
+    font-family: soul;
+    src: url(/SaolDisplay-Light\ \(1\).ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    
+}
+
+#back {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 65%;
+    height: 200px;
+    
+}
+
+nav img {
+
+    height: 80px;
+}
+
+nav a {
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: gilroy;
+    font-weight: 500;
+
+}
+
+nav a:nth-child(2) {
+
+    margin-left: 40px;
+
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: soul;
+    font-weight: 100;
+    line-height: 60px;
+
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+#main .imgcntenr {
+
+    width: 200px;
+    height: 250px;
+    background: yellow;
+}
+
+#main #one,
+#main #sx {
+
+    width: 200px;
+    height: 300px;
+
+}
+
+#main #one {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background: #000;
+}
+
+#main #sx {
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background: #000;
+}
+
+#main #holdr1 {
+    position: absolute;
+    top: 50%;
+    left: 260px;
+    transform: translate(0, -50%);
+    
+}
+
+#main .holdr div {
+    margin-top: 20px;
+}
+
+#main #holdr2 {
+    position: absolute;
+
+    top: 50%;
+    right: 260px;
+    transform: translate(0, -50%);
+
+}
+
+#videoplyr {
+    width: 300px;
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+#videoplyr video {
+
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#main #one {
+
+    background: url(photo\ 3);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#main #two {
+
+    background: url(/photo\ 5.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#main #three {
+
+    background: url(/photo\ 4.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#main #fr {
+
+    background: url(/Tiger-shark-1024x535.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#main #fv {
+
+    background: url(/photo\ 2.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#main #sx {
+
+    background: url(/photo\ 6.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#text {position: relative;
+
+    width: 100vw;
+    height: 20vh;
+    background: #000;
+    color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+gap: 30px;
+
+}
+
+#pg1{
+
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background: #000;
+}
+#fcontenar{
+font-family: gilroy;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#fcontenar img{
+
+margin: 30px;
+    width: 100vh;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+#fcontenar h3{
+text-align: center;
+    color: red;
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+#fcontenar h4{
+text-align: center;
+
+font-weight: 300;
+    
+    font-size: 35px;
+    text-transform: capitalize;
+}
+#fcontenar p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#circal {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: rgba(0, 255, 204, 0.309);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 999999;
+}
+
+h2 {
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 90px;
+    word-spacing: 5px;
+    z-index: 99999;
+    font-family: soul;
+    color: aliceblue;
+}
+
+#btm{
+    color: aliceblue;
+}
+
+#pg2{
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+   
+
+}
+
+#mpg2{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #000;
+    overflow-x: hidden;
+
+}
+#mpg2 > h1{
+letter-spacing: 3px;
+    font-family: gilroy;
+    font-size: 25px;
+    color: rgba(255, 0, 0, 0.777);
+}
+#pg2 .card{
+
+    height: 350px;
+    width: 250px;
+    background: red;
+   
+}
+#pg2 #one{
+
+    background: url(/men1.jfif);
+    background-position: center;
+    background-size: cover;
+}
+#pg2 #two{
+
+    background: url(/men2.jfif);
+    background-position: center;
+    background-size: cover;
+}
+#pg2 #three{
+
+    background: url(/men3.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+#mpg2  #name {
+display: flex;
+justify-content: space-evenly;
+color: aliceblue;
+}
+#mpg2  #name >h3{
+margin-top: 20px;
+
+    font-size: 30px;
+text-transform: capitalize;
+    font-family: gilroy;
+    font-weight: 200;
+}
+#mpg2  #name >h3 p{
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+
+#pg3{
+
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+#pg3 h1{
+
+    font-size: 10vw;
+    line-height:8vw;
+    position: absolute;
+    bottom:20%;
+    left: 20%;
+    
+    z-index: 9999;
+}
+
+#pg3 #pg-con3{
+    display: flex;
+    justify-content:space-evenly;
+       margin-top:150px    
+}
+
+#pg3 #pg-con3 .cover{
+overflow: hidden;
+    height: 400px;
+    width: 20%;
+    background: rgb(132, 221, 233);
+   
+   
+   
+}
+#pg3 #pg-con3 .cover > .card2{
+
+    height: 100%;
+    width: 100%;
+    transition:  all cubic-bezier(0.19, 1, 0.22, 1)3s;
+    
+}
+
+#pg3 #pg-con3 .cover > .card2#one2{
+    background: url(/images21.jfif);
+    background-position: center;
+    background-size: cover;
+}
+#pg3 #pg-con3 .cover > .card2#two2{
+    background: url(/img22.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#pg3 #pg-con3 .cover > .card2#three2{
+    background: url(/images23.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+#pg3 #pg-con3 .cover > .card2:hover{
+    scale: 1.2;
+}
+
+#pg3 h3{margin-top: 70px;
+    font-size: 7vw;
+    font-weight: 100;
+    text-transform: uppercase;
+   font-family: soul;
+    line-height: 1vw;
+
+}
+
+#pg3 #right{
+    white-space:nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#pg3 #right #r{
+
+/* margin-left: 30px; */
+    display: inline-block;
+      animation: scroll 30s reverse infinite linear;
+   
+
+}
+#pg3 #left{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+#pg3 #left #l{
+    display: inline-block;
+    animation: scroll 20s infinite linear;
+}
+
+#pg4{
+    margin-top: 10vw;
+    height: 100vh;
+    width: 100vw;
+
+        
+}
+
+#pg4 h1{
+    margin-left: 14vw;
+text-transform: capitalize;
+text-align: start;  
+margin-bottom: 25px;  
+}
+
+span{
+    color: red;
+}
+
+.swiper {
+
+    width: 70%;
+    height: 70%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    /* font-size: 18px; */
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: #000;
+    
+  }
+
+  .swiper-slide img{
+width: 70%;
+height: 70%;
+
+  }
+  
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+ 
+#onee{
+    background: url(01-182.webp);
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+}
+#onee h
+#two{
+    background: url(01-278.webp);
+    background-position: center;
+    background-size: cover;
+}
+#three{
+    background: url(01-303.webp);
+    background-position: center;
+    background-size: cover;
+}
+#four{
+    background: url(01-466.webp);
+    background-position: center;
+    background-size: cover;
+}
+#five{
+    background: url(01-278.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#pg5{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+
+
+
+
+@keyframes scroll {
+0%{
+    transform: translateX(0);
+
+}
+
+100%{
+    transform: translateX(-100%);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600zpx) {
+    
+    h1 {
+        text-align: center;
+        font-size: 20px;
+        font-family: soul;
+        font-weight: 100;
+        line-height: 40px;
+    
+    }
+
+  }
